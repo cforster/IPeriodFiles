@@ -46,4 +46,13 @@ class IntStack
 	stack=newArray;
     }
 
+    /*
+     * size function
+     * @author cforster
+     */
+    int size()
+    {
+	return top;
+    }
+
 }
