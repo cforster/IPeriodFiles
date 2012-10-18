@@ -11,6 +11,18 @@ class IntStackTest
 	syso(is.pop());
 	syso(is.peek());
 	syso(is.isEmpty());
+
+
+	//tests for popall:
+	int[] temp  = is.popall();
+	for(int i =0; i<temp.length; i++)
+	    {
+	       	System.out.println(temp[i]);
+	    }
+
+	
+	System.out.println(is.isEmpty());
+	   
     }
 
     public static void syso(Object s)
