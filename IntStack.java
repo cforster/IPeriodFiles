@@ -54,5 +54,22 @@ class IntStack
     {
 	return top;
     }
+    
+    /*
+     * pop all function
+     * @author Abby Kasdin, Soleil Ball Van Zee
+     */
+    int[] popall()
+    {
+	int[] newArray = new int[top];
+	int i = 0;
+
+	while(!isEmpty())
+	    {
+	        newArray[i++] = pop();
+	    }	
+
+	return newArray;
+    }
 
 }
