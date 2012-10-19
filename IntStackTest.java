@@ -8,8 +8,10 @@ class IntStackTest
 	is.push(10);
 	is.push(20);
 	is.push(30);
-	syso(is.pop());
+	//	is.pushpop(10);
+	syso(is.pushpop(4));
 	syso(is.peek());
+<<<<<<< HEAD
 	syso(is.isEmpty());
 
 
@@ -23,6 +25,8 @@ class IntStackTest
 	
 	System.out.println(is.isEmpty());
 	   
+=======
+>>>>>>> Made Push/Pop function
     }
 
     public static void syso(Object s)
