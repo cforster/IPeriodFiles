@@ -47,7 +47,6 @@ class IntStack
     }
 
     /*
-<<<<<<< HEAD
      * size function
      * @author cforster
      */
@@ -71,7 +70,9 @@ class IntStack
 	    }	
 
 	return newArray;
-=======
+     }
+
+     /*
       Elias and Deven wrote this they are straight up awesome!
      */
     int pushpop(int i)
@@ -79,7 +80,6 @@ class IntStack
 	int x =  pop();
 	push(i);
 	return x;
->>>>>>> Made Push/Pop function
     }
 
 }
