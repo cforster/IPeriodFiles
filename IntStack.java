@@ -116,4 +116,22 @@ class IntStack
 
     }
 
+    /*
+     * pop (depth) function
+     * @author calja
+     */
+
+    int[] popdepth()
+    {
+        int depth = 0;
+	int count = 0;
+
+	while  (!isEmpty()&&count<depth)
+	    { 
+		pop();
+		count++;
+	    }
+	return stack;
+
+    }
 }
