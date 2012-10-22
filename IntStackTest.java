@@ -4,14 +4,23 @@ class IntStackTest
     {
 	IntStack is = new IntStack(2);
 
+
 	syso(is.isEmpty());
 	is.push(10);
 	is.push(20);
 	is.push(30);
-	//	is.pushpop(10);
-	
+
 	//test pushpop:
 	syso(is.pushpop(4));
+
+	//gold's test for push(int[])
+	int[] test = new int[5];
+	test[0] = 1; 
+	test [1] = 2;
+      	is.push(test);
+	syso(is.pop());
+
+
 	syso(is.peek());
 	syso(is.isEmpty());
 

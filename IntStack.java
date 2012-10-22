@@ -45,6 +45,26 @@ class IntStack
 	
 	stack=newArray;
     }
+    
+    
+    /**
+     *
+     * @author Zach Gold and Jackson Seminara 
+     * Pushes multiple items into a stack 
+     *
+    **/ 
+    
+
+    void push(int[] list) 
+    {
+      for(int i = 0; i<list.length; i++)
+      {
+        stack[top++] = list[i];
+       	if(top==stack.length) resize();
+      }
+    }
+
+
 
     /*
      * size function
