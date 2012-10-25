@@ -9,8 +9,15 @@ public class IntQueueTest {
 	iq.put(5);
 	
 	//new function tests:
-	//	System.out.println(iq.getput(7));
-	
+
+
+	// test for getall
+	int[] temp= iq.getall();
+	for(int i =0;i<temp.length; i++)
+	    {
+		System.out.println(temp[i]);
+	    }
+	System.out.println(iq.isEmpty());
     }
 
 }

@@ -22,6 +22,7 @@ public class IntQueue {
 	front %= queue.length;	
 	return ret;
     }
+
     //Elias and Deven #straightballin not finished!
     private void resize() {
 	tempqueue = new int[size *2];
@@ -50,6 +51,29 @@ public class IntQueue {
 	int gotten = get();
 	put(i);
 	return gotten;
+
+  /*
+     * get all function
+     * @author Abby "Rock Hard Abz" Kasdin and Soleil "Stoooopid Soleel" Ball Van Zee
+     */
+    int [] getall()
+    {
+	int [] newArray = new int [size()];
+	int i = 0;
+	
+	while(!isEmpty())
+	    {
+		newArray[i++]=get();
+	    }	
+
+	return newArray;
+    }
+
+    /* size ABZ AND STUOPUID */
+    int size()
+    {
+	if(front>back) return queue.length - (front-back);
+	else return back-front;
     }
 
 }
