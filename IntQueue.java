@@ -76,4 +76,21 @@ public class IntQueue {
 	else return back-front;
     }
 
+    /*
+     * @author Zach Gold and Jackson Seminara
+     * Puts multiple items into a queue 
+     */
+
+    void put(int[] list)
+    {
+	for(int i = 0; i <list.length; i++)
+	    {
+		queue[back++] = list[i];
+		back %= queue.length;
+	        if(isEmpty()) resize() ; //resize; 
+		
+	    }
+     
+    }
+
 }
