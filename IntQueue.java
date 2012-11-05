@@ -2,6 +2,7 @@ public class IntQueue {
 
     private int[] queue;
     private int front, back;
+    private int[] tempqueue;
     
     public IntQueue(int size) {
 	queue = new int[size];
@@ -25,15 +26,16 @@ public class IntQueue {
 
     //Elias and Deven #straightballin not finished!
     private void resize() {
-	tempqueue = new int[size *2];
-	for(int i = 0; i < tempqueue.length; i++;){
-	    for(int j = 0; j < front; j ++;){
+	tempqueue = new int[queue.length *2];
+	for(int j = 0; j < front; j ++){
+	    for(int i = 0; i < tempqueue.length; i++){
+	   
 		queue[j] = tempqueue[i];
 		
 	    }
 	}
-	for(int i = tempqueue.length; i > 0 ; i--;){
-	    for(int j = 0; j >= front; j ++;){
+       	for(int j = 0; j < front; j ++){
+	    for(int i = 0; i < tempqueue.length; i++){
 		queue[j] = tempqueue[i];
 		
 	    }
