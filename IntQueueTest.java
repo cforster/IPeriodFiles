@@ -4,20 +4,17 @@ public class IntQueueTest {
 	IntQueue iq = new IntQueue(2);
 
 	//general tests:
-<<<<<<< HEAD
+
 	//iq.put(3);
 	//iq.put(4);
 	//iq.put(5);
-=======
 	iq.put(3);
 	iq.put(4);
 	iq.put(5);
 	iq.put(6);
 	iq.put(7);
->>>>>>> working?
 	
 	//new function tests:
-<<<<<<< HEAD
 
 
 
@@ -28,7 +25,6 @@ public class IntQueueTest {
 		System.out.println(temp[i]);
 	    }
 	System.out.println(iq.isEmpty());
-<<<<<<< HEAD
 
 	
 	//gold/seminara test for put(int[])
@@ -38,13 +34,7 @@ public class IntQueueTest {
         test [2] = 3;
 	iq.put(test);
 	System.out.println(iq.get());
-
-=======
-=======
       
-	
->>>>>>> made resize
->>>>>>> working?
     }
 
 }
