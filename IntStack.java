@@ -1,3 +1,4 @@
+
 class IntStack
 {
     //declarations:
@@ -100,6 +101,19 @@ class IntStack
 	int x =  pop();
 	push(i);
 	return x;
+    }
+
+    //Alison!
+    
+    int[] flop()
+    {
+	IntStack flopstack = new IntStack(stack.length);
+
+	while(!isEmpty()){
+	    flopstack.push(pop());
+	}
+	return flopstack.popall();
+
     }
 
 }
