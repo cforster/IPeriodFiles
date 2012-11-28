@@ -2,6 +2,7 @@ public class IntQueue {
 
     private int[] queue;
     private int front, back;
+    private int[] tempqueue;
     
     public IntQueue(int size) {
 	queue = new int[size];
@@ -39,24 +40,19 @@ public class IntQueue {
 		
 	    }
 	}
-	for(int i = tempqueue.length; i > 0 ; i--){
-	    for(int j = 0; j >= front; j ++){
-		queue[j] = tempqueue[i];	
-	    }
-	}
     }
     
     public boolean isEmpty() {
 	return back == front;
     }
 
-    /*   
+
  //Elias and Deven #straightballin
     public int getput(int i){
 	int gotten = get();
 	put(i);	return gotten;
 
-*/
+    }
  
  /*
      * get all function
@@ -94,4 +90,23 @@ public class IntQueue {
 	return newqueue.getall();
     }
   
+
+    /*
+     * @author Zach Gold and Jackson Seminara
+     * Puts multiple items into a queue 
+     */
+
+    void put(int[] list)
+    {
+	for(int i = 0; i <list.length; i++)
+	    {
+		queue[back++] = list[i];
+		back %= queue.length;
+	        if(isEmpty()) resize() ; //resize; 
+		
+	    }
+     
+    }
+
+
 }
