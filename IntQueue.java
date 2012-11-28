@@ -79,7 +79,12 @@ public class IntQueue {
     }
 
 
-    //Adam and Alison
+    /*Adam and Alison
+      Alison fixed resize: instead of queue.length*2 to size()*2 BONUSSSS!!!
+      Also fixed a lot of semicolon errors throughout the whole thing.
+      
+     */
+
     int[] getUntil(int a)
     {
 	IntQueue newqueue = new IntQueue(size()+2);
