@@ -82,12 +82,16 @@ public class IntQueue {
     //Adam and Alison
     int[] getUntil(int a)
     {
-	IntQueue newqueue = new IntQueue(size());
+	IntQueue newqueue = new IntQueue(size()+2);
 	
-	while(!isEmpty()&&peek()!=a){
-	    newqueue.put(get());
+	while(true){
+	    if(isEmpty()) break;
+	    if(peek()==a) break;
+	    newqueue.put(this.get());
 	}
+	
 	return newqueue.getall();
+
     }
   
 
