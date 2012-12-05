@@ -33,6 +33,9 @@ class IntStackTest
 	}
 	System.out.println(is.isEmpty());
 	
+	//tests for pop(depth)
+
+
     }
     public static void syso(Object s)
     {
