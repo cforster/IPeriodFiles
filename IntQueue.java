@@ -117,5 +117,13 @@ public class IntQueue {
      
     }
 
+    //calja
+    //get(depth)
+    //this function gets the item at a set depth
+    //then moves everything along to fill in the blank spot or something like that.
+
+
+
+
 
 }
