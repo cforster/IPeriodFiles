@@ -118,9 +118,19 @@ public class IntQueue {
     }
 
     //calja
-    //get(depth)
+    public int getdepth(int depth){
+        int gotten = queue[depth];
+        for (int i = depth; i < queue.length; i++)
+        {
+            int j=i;
+            queue[i] = queue [j+1];
+            j++;
+            back--;
+        }
+        return gotten;
     //this function gets the item at a set depth
     //then moves everything along to fill in the blank spot or something like that.
+    }
 
 
 

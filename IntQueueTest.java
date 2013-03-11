@@ -62,7 +62,15 @@ public class IntQueueTest {
 
 
     //tests for get(depth) here:
-
-    
+    iq.put(3);
+    iq.put(2);
+    iq.put(4);
+    iq.put(8);
+    iq.put(9);
+    iq.put(1);
+    iq.put(6);
+        int result = iq.getdepth(3);
+        System.out.println(result);
+        
     }
 }
